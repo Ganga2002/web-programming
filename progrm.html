@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>prgm</title>
+</head>
+<body>
+<br><br>
+<button id="btn" onClick="getdate()">Display Date</button>
+<input type="" id="frmDate">
+</body>
+<script>
+
+function getdate(){
+var todaydate = new Date();
+var day = todaydate.getDate();
+var month = todaydate.getMonth() + 1;
+var year = todaydate.getFullYear();
+var date = day + "/" + month + "/" + year;
+document.getElementById("frmDate").value = date;
+}
+getDate();
+</script>
+</html>
